@@ -1,0 +1,122 @@
+.toDoList__main {
+  background-color: #ecbc76;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.toDoList__dialog {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 35%;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.toDoList__dialog-body {
+  padding: 24px 24px 0;
+}
+.toDoList__text-header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* color: #fff; */
+}
+.toDoList__add {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 12px;
+  height: auto;
+  /* column-gap: 8px; */
+  /* height: 32px; */
+}
+.toDoList__add-input {
+  /* flex: 1; */
+  border-radius: 4px;
+  height: 32px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 12px;
+}
+
+.toDoList__add-input:focus {
+  border-color: #4285f4;
+}
+.toDoList__add-priority {
+  width: 120px;
+  border: 1px solid #ccc;
+  outline: none;
+  display: flex;
+}
+.toDoList__add-priority option {
+  padding: 12px;
+}
+.toDoList__btn {
+  cursor: pointer;
+  width: 52px;
+  height: 32px;
+  background-color: #ecbc76;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.update__task-btn {
+  display: flex;
+  column-gap: 12px;
+}
+
+.toDoList__items {
+  margin-top: 40px;
+  height: 350px;
+  overflow-y: scroll;
+}
+.toDoList__item {
+  box-shadow: 0px 4px 8px rgba(119, 147, 65, 0.3);
+  height: 54px;
+  border-radius: 6px;
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toDoList__item-text {
+  flex: 1;
+}
+
+.toDoList__item .done .toDo-title,
+.toDoList__item .done .toDo-content {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.toDoList__item-icon {
+  padding-right: 12px;
+  display: flex;
+  column-gap: 8px;
+}
+.toDoList__item-icon span {
+  font-size: 20px;
+  color: #ecbc76;
+}
+.toDoList__item-icon span:hover {
+  color: rgba(236, 188, 118, 0.7);
+}
+.toDo-title {
+  padding: 4px 12px;
+  margin: 0;
+}
+.toDo-content {
+  padding: 0 0 12px 24px;
+}
+
+.filterStatus {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding-top: 24px;
+}
+.filterStatus input {
+  cursor: pointer;
+}
